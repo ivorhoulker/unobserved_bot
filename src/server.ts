@@ -2,6 +2,7 @@ import Discord, { Message } from 'discord.js';
 import { CommandHandler } from './command_handler';
 import { BotConfig, config } from './config/config';
 
+require('dotenv');
 /** Pre-startup validation of the bot config. */
 function validateConfig(botConf: BotConfig) {
   if (!botConf.token) {
